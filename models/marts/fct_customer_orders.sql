@@ -82,13 +82,7 @@ final as (
     order_status,
     payment_status
 
-from orders
-
-join customers
-on orders.customer_id = customers.customers_id
-
-join customer_order_history
-on orders.customer_id = customer_order_history.customer_id
+from add_avg_order_values
 )
 
 -- Simple Select Statement
